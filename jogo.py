@@ -170,7 +170,7 @@ pecas.append(zero_tres)			#3
 pecas.append(zero_quatro)		#4
 pecas.append(zero_cinco)		#5
 pecas.append(zero_seis)			#6
-pecas.append(um_um)				#7			-4
+pecas.append(um_um)			#7			-4
 pecas.append(um_dois)			#8
 pecas.append(um_tres)			#9
 pecas.append(um_quatro)			#10
@@ -195,34 +195,34 @@ pecas.append(seis_seis)			#27			-39
 
 
 pecasMapeadas = [
-					('0', '0'),
-					('0', '1'),
-					('0', '2'),
-					('0', '3'),
-					('0', '4'),
-					('0', '5'),
-					('0', '6'),
-					('1', '1'),
-					('1', '2'),
-					('1', '3'),
-					('1', '4'),
-					('1', '5'),
-					('1', '6'),
-					('2', '2'),
-					('2', '3'),
-					('2', '4'),
-					('2', '5'),
-					('2', '6'),
-					('3', '3'),
-					('3', '4'),
-					('3', '5'),
-					('3', '6'),
-					('4', '4'),
-					('4', '5'),
-					('4', '6'),
-					('5', '5'),
-					('5', '6'),
-					('6', '6')
+		('0', '0'),
+		('0', '1'),
+		('0', '2'),
+		('0', '3'),
+		('0', '4'),
+		('0', '5'),
+		('0', '6'),
+		('1', '1'),
+		('1', '2'),
+		('1', '3'),
+		('1', '4'),
+		('1', '5'),
+		('1', '6'),
+		('2', '2'),
+		('2', '3'),
+		('2', '4'),
+		('2', '5'),
+		('2', '6'),
+		('3', '3'),
+		('3', '4'),
+		('3', '5'),
+		('3', '6'),
+		('4', '4'),
+		('4', '5'),
+		('4', '6'),
+		('5', '5'),
+		('5', '6'),
+		('6', '6')
 ]
 
 
@@ -304,12 +304,12 @@ while True:
 										# deixa "em pé" se a peça for uma carroça
 										if ladoEsquerdoDaPecaAtual == ladoDireitoDaPecaAtual: 
 											img = pecas[indicePecas].copy()
-											# img = pygame.transform.rotate(img,90)					# gira a peça
+											# img = pygame.transform.rotate(img,90)			# gira a peça
 											posicaoX_esquerdo =  posicaoX_esquerdo + 30
 											pecaRecenteEmPe = True
-											tela.blit(img, (posicaoX_esquerdo, 230))				# posiciona a imagem na tela
+											tela.blit(img, (posicaoX_esquerdo, 230))		# posiciona a imagem na tela
 											posicaoX_esquerdo = posicaoX_esquerdo - int(125//2.958)	# atualiza posição de X para a próxima peça
-											pecasJogadas.append(pecasMeroMortal[i])					# adiciona a peça à lista das peças jogadas
+											pecasJogadas.append(pecasMeroMortal[i])			# adiciona a peça à lista das peças jogadas
 											print(f'Peças jogadas: {pecasJogadas}')
 											ladoEsquerdoDaUltimaPecaJogada = ladoEsquerdoDaPecaAtual
 											print(f'lado esquerdo da ultima peça jogada: {ladoEsquerdoDaUltimaPecaJogada}')
@@ -322,7 +322,7 @@ while True:
 										else:
 											# deixa "deitada" se a peça não for uma carroça
 											img = pecas[indicePecas].copy()
-											img = pygame.transform.rotate(img,-90) # aqui a imagem gira 90º para seguir o "match" no lado esquerdo
+											img = pygame.transform.rotate(img,-90) 			# aqui a imagem gira 90º para seguir o "match" no lado esquerdo
 											
 											# ajuste para encaixar a peça deitada quando a anterior ficou em pé
 											if pecaRecenteEmPe == True:
@@ -357,12 +357,12 @@ while True:
 										# deixa "em pé" se a peça for uma carroça
 										if ladoEsquerdoDaPecaAtual == ladoDireitoDaPecaAtual: 
 											img = pecas[indicePecas].copy()
-											# img = pygame.transform.rotate(img,90)					# gira a peça
+											# img = pygame.transform.rotate(img,90)				# gira a peça
 											posicaoX_esquerdo =  posicaoX_esquerdo + 30
 											pecaRecenteEmPe = True
-											tela.blit(img, (posicaoX_esquerdo, 230))				# posiciona a imagem na tela
+											tela.blit(img, (posicaoX_esquerdo, 230))			# posiciona a imagem na tela
 											posicaoX_esquerdo = posicaoX_esquerdo - int(125//2.958)	# atualiza posição de X para a próxima peça
-											pecasJogadas.append(pecasMeroMortal[i])					# adiciona a peça à lista das peças jogadas
+											pecasJogadas.append(pecasMeroMortal[i])				# adiciona a peça à lista das peças jogadas
 											print(f'Peças jogadas: {pecasJogadas}')
 											ladoEsquerdoDaUltimaPecaJogada = ladoEsquerdoDaPecaAtual
 											print(f'lado esquerdo da ultima peça jogada: {ladoEsquerdoDaUltimaPecaJogada}')
@@ -556,12 +556,12 @@ while True:
 										# deixa "em pé" se a peça for uma carroça
 										if ladoEsquerdoDaPecaAtual == ladoDireitoDaPecaAtual: 
 											img = pecas[indicePecas].copy()
-											# img = pygame.transform.rotate(img,90)					# gira a peça
+											# img = pygame.transform.rotate(img,90)			# gira a peça
 											posicaoX_esquerdo =  posicaoX_esquerdo + 30
 											pecaRecenteEmPe = True
-											tela.blit(img, (posicaoX_esquerdo, 230))				# posiciona a imagem na tela
+											tela.blit(img, (posicaoX_esquerdo, 230))		# posiciona a imagem na tela
 											posicaoX_esquerdo = posicaoX_esquerdo - int(125//2.958)	# atualiza posição de X para a próxima peça
-											pecasJogadas.append(pecasHeuristicaUm[i])				# adiciona a peça à lista das peças jogadas
+											pecasJogadas.append(pecasHeuristicaUm[i])		# adiciona a peça à lista das peças jogadas
 											print(f'Peças jogadas: {pecasJogadas}')
 											ladoEsquerdoDaUltimaPecaJogada = ladoEsquerdoDaPecaAtual
 											print(f'lado esquerdo da ultima peça jogada: {ladoEsquerdoDaUltimaPecaJogada}')
@@ -609,12 +609,12 @@ while True:
 										# deixa "em pé" se a peça for uma carroça
 										if ladoEsquerdoDaPecaAtual == ladoDireitoDaPecaAtual: 
 											img = pecas[indicePecas].copy()
-											# img = pygame.transform.rotate(img,90)					# gira a peça
+											# img = pygame.transform.rotate(img,90)			# gira a peça
 											posicaoX_esquerdo =  posicaoX_esquerdo + 30
 											pecaRecenteEmPe = True
-											tela.blit(img, (posicaoX_esquerdo, 230))				# posiciona a imagem na tela
+											tela.blit(img, (posicaoX_esquerdo, 230))		# posiciona a imagem na tela
 											posicaoX_esquerdo = posicaoX_esquerdo - int(125//2.958)	# atualiza posição de X para a próxima peça
-											pecasJogadas.append(pecasHeuristicaUm[i])					# adiciona a peça à lista das peças jogadas
+											pecasJogadas.append(pecasHeuristicaUm[i])		# adiciona a peça à lista das peças jogadas
 											print(f'Peças jogadas: {pecasJogadas}')
 											ladoEsquerdoDaUltimaPecaJogada = ladoEsquerdoDaPecaAtual
 											print(f'lado esquerdo da ultima peça jogada: {ladoEsquerdoDaUltimaPecaJogada}')
@@ -775,10 +775,10 @@ while True:
 		indicePecas = encontraIndiceEmPecas(primeiraJogada, primeiraJogada_Esquerda, primeiraJogada_Direita)
 
 		imgRect = pecas[indicePecas].get_rect(center = tela.get_rect().center)		# centraliza a peça na tela
-		img = pecas[indicePecas].copy()												# faz uma cópia da imagem (peça) para não haver distorção ao girar
-		img = pygame.transform.rotate(img,90)										# gira a imagem
+		img = pecas[indicePecas].copy()							# faz uma cópia da imagem (peça) para não haver distorção ao girar
+		img = pygame.transform.rotate(img,90)						# gira a imagem
 		# tela.blit(img, imgRect)
-		tela.blit(img, (555, 250))													# posiciona a imagem da peça na tela
+		tela.blit(img, (555, 250))							# posiciona a imagem da peça na tela
 		pecasJogadas.append(pecasHeuristicaUm[primeiraJogada])
 		posicaoX_esquerdo = 468
 		posicaoX_direito = 642
